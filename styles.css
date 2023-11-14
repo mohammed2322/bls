@@ -2,17 +2,66 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    color: #444; /* Slightly darker font for better readability */
+    background: #f4f4f4; /* Light grey background for less strain on the eyes */
 }
 
 header, nav, article, footer {
     margin-bottom: 20px;
+    padding: 20px;
+    background: #fff; /* White backgrounds for content areas to stand out from the page background */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
 nav a, footer a {
     text-decoration: none;
-    color: #333;
+    color: #5D5D5D; /* A slightly different shade for links to stand out */
+    transition: color 0.3s; /* Smooth transition for hover effects */
 }
 
 nav a:hover, footer a:hover {
+    color: #000; /* Change color on hover for clear interactivity */
     text-decoration: underline;
+}
+
+/* Enhance the visual hierarchy with size and weight */
+h1 {
+    font-size: 2em; /* Larger font size for main headings */
+    color: #333; /* Darker color for prominence */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Improved visual separation and grouping for navigation */
+nav {
+    background: #e9e9e9; /* A different background for the navigation bar */
+    padding: 10px; /* Padding for spacing inside the nav */
+    border-radius: 8px; /* Rounded corners to match other elements */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    display: flex; /* Flex layout for horizontal alignment */
+    justify-content: center; /* Centered navigation links */
+}
+
+nav ul li {
+    margin: 0 10px; /* Space out the navigation links */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack the navigation links for small screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce margin for vertical stacking */
+    }
 }
